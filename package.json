@@ -1,0 +1,20 @@
+{
+  "name": "web-front-end-project",
+  "version": "1.0.0",
+  "description": "Single-page application",
+  "scripts": {
+    "prestart": "npm install",
+    "serve": "./node_modules/.bin/live-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CosmicEon/web-front-end-project.git"
+  },
+  "keywords": [],
+  "author": "Krasen Ilkov (CosmicEon)",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

@@ -1,0 +1,30 @@
+/* width: 1600, 1200, 670, 360 */
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1200px) {
+    div.tab-one-right {
+        padding: 98px 50px 98px 50px;
+    }
+    div.tab-one-text {
+        max-width: 100%;
+    }
+    div.footer-adress {
+        padding: 100px 100px 100px 100px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    div.tab-one-right p {
+        font-size: inherit;
+    }
+    div.footer-adress {
+        padding: 100px 0 100px 0;
+        /* display: flex; */
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: space-between !important;
+        height: 100%
+    }
+}
