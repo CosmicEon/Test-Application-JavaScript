@@ -20,7 +20,6 @@
         flex-direction: column;
         align-items: center;
     }
-
     div.footer-social {
         padding-left: 0;
     }
@@ -40,10 +39,10 @@
         text-align: center;
         /* align-self: center; */
     }
-    ul.nav-menu {
+    .nav-menu {
         display: none;
     }
-    .mobile-menu:hover ul.nav-menu {
+    .mobile-menu:hover .nav-menu {
         display: block;
         position: absolute;
     }
@@ -91,7 +90,6 @@
 @media screen and (max-width: 470px) {
     .nav-search {
         display: flex;
-        /* flex-direction: column; */
         align-items: center;
         align-self: center;
     }
@@ -109,6 +107,10 @@
 }
 
 @media screen and (max-width: 360px) {
+    .nav-search {
+        display: flex;
+        flex-direction: column;
+    }
     .footer-adress-desc {
         flex-direction: column;
         border-bottom: 1px solid white;
