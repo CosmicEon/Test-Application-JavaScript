@@ -41,19 +41,28 @@ body {
 
 /* Header Top-Header */
 
-div.top-header {
+.top-header {
     width: 100%;
+    display: flex;
+    justify-content: space-between
+    /* justify-content: flex-end; */
 }
 
 img.logo {
+    width: 232px;
+    height: 49px;
     margin: 12px 29px 10px;
+    align-self: flex-start;
 }
-
+.call {
+    display: flex;
+}
 div.send-message {
-    float: right;
+    /* float: right; */
     text-transform: uppercase;
     border-left: 1px solid gray;
     padding: 23px 28px 23px 20px;
+    align-self: flex-end;
 }
 
 div.send-message a {
@@ -67,10 +76,11 @@ div.send-message a:hover {
 }
 
 div.phone-call {
-    float: right;
+    /* float: right; */
     margin: 23px 31px 18px;
     font-size: 18px;
     color: #868686;
+    align-self: flex-end;
 }
 
 img.phone-call-icon {
@@ -90,6 +100,15 @@ div.phone-call-text {
 nav {
     background-color: #1a1a1a;
     /* height: 20px; */
+}
+
+.mobile-menu {
+    display: none;
+    color: #575757;
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Regular';
 }
 
 ul.nav-menu {
@@ -373,13 +392,14 @@ footer {
     background-color: #333333;
 }
 
-div.footer-adress {
-    padding: 145px;
+div.footer-container {
+    padding: 145px 0;
 }
 
 .footer-adress-menu {
     margin: 0px;
-    padding: 0 8px 18px 0px;
+    padding-left: 0px;
+    padding-bottom: 18px;
     /* padding-left: 0px; */
     border-bottom: 1px solid white;
 }
@@ -414,15 +434,17 @@ div.footer-adress {
 .footer-adress-desc-item:first-child {
     border-right: 2px solid white;
     padding-left: 0px;
-    padding-right: 61px;
+    padding-right: 59px;
 }
 
 .footer-logo {
-    margin-top: 47px;
+    margin: 51px 86px;
+    /* margin-top: 47px;
+    margin-bottom: 47px; */
 }
 
 .footer-social {
-    padding-left: 66px;
+    /* padding-left: 66px; */
 }
 
 .footer-social-n {
